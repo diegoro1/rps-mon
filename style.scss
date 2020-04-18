@@ -111,6 +111,11 @@ body
         input:focus
         {
             outline: none;
+            background-color: $small_text;
+        }
+        input:hover
+        {
+            background-color: $small_text;
         }
 
         
@@ -132,4 +137,23 @@ body
     height: 5vh;
     background-color: $head_color;
     width: 100%;
+}
+
+@media only screen and (max-width: 600px) 
+{
+    .score-board
+    {
+        width: 300px !important;
+    }
+
+    input
+    {
+        width: 70px !important;
+        height: 70px !important;
+    }
+
+    .pick
+    {
+        display: none !important;
+    }
 }

@@ -1,18 +1,64 @@
-function playerWin()
+function playerWin(choice)
 {
     player_score++;
     player_score_p.innerHTML = player_score;
+
+    switch(choice)
+    {
+        case 1:
+            rock_input.style.border = "#CBEF43 solid";
+            setTimeout(() => rock_input.style.border = "solid #433A3F", 300);
+            break;
+        case 2:
+            paper_input.style.border = "#CBEF43 solid";
+            setTimeout(() => paper_input.style.border = "solid #433A3F", 300);
+            break;
+        case 3:
+            scissors_input.style.border = "#CBEF43 solid";
+            setTimeout(() => scissors_input.style.border = "solid #433A3F", 300);
+            break;
+    }
 }
 
-function cpuWin()
+function cpuWin(choice)
 {
     cpu_score++;
     cpu_score_p.innerHTML = cpu_score;
+
+    switch(choice)
+    {
+        case 1:
+            rock_input.style.border = "crimson solid";
+            setTimeout(() => rock_input.style.border = "solid #433A3F", 300);
+            break;
+        case 2:
+            paper_input.style.border = "crimson solid";
+            setTimeout(() => paper_input.style.border = "solid #433A3F", 300);
+            break;
+        case 3:
+            scissors_input.style.border = "crimson solid";
+            setTimeout(() => scissors_input.style.border = "solid #433A3F", 300);
+            break;
+    }
 }
 
-function draw()
+function draw(choice)
 {
-
+    switch(choice)
+    {
+        case 1:
+            rock_input.style.border = "#fffaf0 solid";
+            setTimeout(() => rock_input.style.border = "solid #433A3F", 300);
+            break;
+        case 2:
+            paper_input.style.border = "#fffaf0 solid";
+            setTimeout(() => paper_input.style.border = "solid #433A3F", 300);
+            break;
+        case 3:
+            scissors_input.style.border = "#fffaf0 solid";
+            setTimeout(() => scissors_input.style.border = "solid #433A3F", 300);
+            break;
+    }
 }
 
 function updateImage(user, choice)
@@ -42,15 +88,15 @@ function play(player)
     // comparing
     if (player === cpu)
     {
-        draw();
+        draw(player);
     }
     else if ((player === 1 && cpu === 3) || (player === 2 && cpu === 1) || (player === 3 && cpu === 2))
     {
-        playerWin();
+        playerWin(player);
     }
     else
     {
-        cpuWin();
+        cpuWin(player);
     }
 }
 
