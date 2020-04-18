@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RPS</title>
+</head>
+<body>
+    <header class="header">
+        Rock Paper Scissors
+    </header>
+    <div class="main">
+        <div class="score-board">
+            <div class="user">
+                <img src="assets/user.png" alt="user-img">
+                <p>Player</p>
+            </div>
+            <div class="board">
+                <div class="pick">
+                    <div class="left-side">
+                        <img id="player-pick" src="assets/egg.png" alt="egg-img">
+                    </div>
+                    <div class="right-side">
+                        <img id="cpu-pick" src="assets/egg.png" alt="egg-img">
+                    </div>
+                </div>
+                <div class="points"> 
+                    <p id="player">0</p>
+                    <p>:</p>
+                    <p id="cpu">0</p>
+                </div>
+            </div>
+            <div class="cpu">
+                <img src="assets/cpu.png" alt="cpu-img">
+                <p>CPU</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="button">
+                <input type="image" name="paper" id="paper" src="assets/Spr_3f_001.png">
+                <p>Paper</p>
+            </div>
+            <div class="button">
+                <input type="image" name="rock" id="rock" src="assets/rock.png">
+                <p>Rock</p>
+            </div>
+            <div class="button">
+                <input type="image" name="scissors" id="scissors" src="assets/scissors.png">
+                <p>Scissors</p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

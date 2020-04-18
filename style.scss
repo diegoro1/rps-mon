@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Knewave&display=swap');
+
+$head_color: #433A3F;
+$text_color: #CBEF43;
+$small_text: #3D5A6C;
+$main_color: #72A98F;
+
+body
+{
+    margin: 0em;
+    font-family: 'Knewave', cursive;
+}
+
+.header
+{
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    background-color: $head_color;
+    color: $text_color;
+    width: 100%;
+}
+
+.main
+{
+    height: 85vh;
+    background-color: $main_color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .score-board
+    {
+        //border: $head_color solid 2px;
+        height: 200px;
+        width: 550px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        .board
+        {
+            width: 66%;
+            display: flex;
+            flex-direction: column;
+
+            .pick
+            {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                
+                img
+                {
+                    width: 150%;
+                }
+
+                .right-side
+                {
+                    margin-right: 40px;
+                }
+
+            }
+
+            .points
+            {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+        }
+        
+        img
+        {
+            width: 150px;
+        }
+
+        p
+        {
+            font-size: 25px;
+            text-align: center;
+            margin: 0;
+            color: $small_text;
+        }
+    }
+
+    .buttons
+    {
+        //border: $head_color solid 2px;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 800px;
+        height: 200px;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 60px;
+        
+        input
+        {
+            height: 130px;
+            border: solid $head_color ;
+            border-radius: 100%;
+            background-color: $head_color;
+            margin: 0 30px;
+        }
+
+        input:focus
+        {
+            outline: none;
+        }
+
+        
+        .button
+        {
+            p
+            {
+                font-size: 25px;
+                text-align: center;
+                margin: 0;
+                color: $small_text;
+            }
+        }
+    }
+}
+
+.footer
+{
+    height: 5vh;
+    background-color: $head_color;
+    width: 100%;
+}

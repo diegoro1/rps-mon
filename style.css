@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Knewave&display=swap");
+body {
+  margin: 0em;
+  font-family: 'Knewave', cursive; }
+
+.header {
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  background-color: #433A3F;
+  color: #CBEF43;
+  width: 100%; }
+
+.main {
+  height: 85vh;
+  background-color: #72A98F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%; }
+  .main .score-board {
+    height: 200px;
+    width: 550px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .main .score-board .board {
+      width: 66%;
+      display: flex;
+      flex-direction: column; }
+      .main .score-board .board .pick {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly; }
+        .main .score-board .board .pick img {
+          width: 150%; }
+        .main .score-board .board .pick .right-side {
+          margin-right: 40px; }
+      .main .score-board .board .points {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly; }
+    .main .score-board img {
+      width: 150px; }
+    .main .score-board p {
+      font-size: 25px;
+      text-align: center;
+      margin: 0;
+      color: #3D5A6C; }
+  .main .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    height: 200px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px; }
+    .main .buttons input {
+      height: 130px;
+      border: solid #433A3F;
+      border-radius: 100%;
+      background-color: #433A3F;
+      margin: 0 30px; }
+    .main .buttons input:focus {
+      outline: none; }
+    .main .buttons .button p {
+      font-size: 25px;
+      text-align: center;
+      margin: 0;
+      color: #3D5A6C; }
+
+.footer {
+  height: 5vh;
+  background-color: #433A3F;
+  width: 100%; }
+
+/*# sourceMappingURL=style.css.map */
